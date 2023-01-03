@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
-    tools:context=".MainActivity">
-
+    android:background="@drawable/login">
     <LinearLayout
         android:layout_width="361dp"
-        android:layout_height="361dp"
+        android:layout_height="500dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
@@ -19,16 +16,14 @@
         android:background="@drawable/kotak_transparan"
         android:elevation="22dp"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="Login"
+            android:text="Register"
             android:textSize="25dp"
             android:textStyle="bold" />
-
         <LinearLayout
             android:layout_width="299dp"
             android:layout_height="54dp"
@@ -42,14 +37,28 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:hint="Username" />
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="299dp"
             android:layout_height="54dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/kotak_transparan"
+            android:elevation="22dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="299dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
             android:background="@drawable/kotak_transparan"
             android:elevation="22dp">
 
@@ -65,18 +74,16 @@
             android:layout_width="299dp"
             android:layout_height="54dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/kotak_transparan"
             android:elevation="22dp">
 
-            <Button
-                android:id="@+id/btnLogin1"
-                android:layout_width="113dp"
-                android:layout_height="54dp"
-                android:hint="Login"
-                android:textStyle="bold"
-                android:backgroundTint="#FFA45B"
-                android:layout_marginLeft="92dp"/>
-
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Re-Password"
+                android:inputType="textPassword"/>
         </LinearLayout>
 
         <LinearLayout
@@ -84,30 +91,19 @@
             android:layout_height="54dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:elevation="22dp"
-            android:orientation="horizontal">
+            android:elevation="22dp">
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Don’t have an account?"
-               android:gravity="center"
-               android:layout_marginLeft="50dp">
-           </TextView>
-
-            <TextView
-                android:id="@+id/Tv1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register"
-                android:layout_marginLeft="2dp"
-                android:textColor="#FFF44336">
-            </TextView>
-
+            <Button
+                android:id="@+id/btnRegister2"
+                android:layout_width="113dp"
+                android:layout_height="54dp"
+                android:layout_marginHorizontal="95dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Register"
+                android:textStyle="bold"
+                android:backgroundTint="#FFA45B"/>
         </LinearLayout>
 
-
     </LinearLayout>
-
 
 </RelativeLayout>
